@@ -1,48 +1,27 @@
-
-.holizontal-list
-
-  .left-side-bar
-    .left-side-header
-      
-      .left-header-center-box 
-        .left-header-left-box masa
-        .left-header-right-box 
-          = link_to "#", class: "contents__btn" do
-            %i.fas.fa-edit.fa-white.fa-margin
-            
-          = link_to "#", class: "contents__btn" do
-            %i.fas.fa-cog.fa-white
-
-    .left-side-content
-      .left-content-title techcamp
-      .left-content-message まだメッセージがありません
-
-  .main
-    .main-header
-      .main-header-left
-        .main-header-title test
-        .main-header-member Member:Masa
-
-      .main-header-right 
-        = link_to "#", class: "contents__btn" do
-          edit
-    .main-content
-      .main-content-box
-        .main-title-box
-          .main-content-name masa
-          .main-content-time 2020/1/10(Fry) 10:10:30
-        .main-content-message おはよう！雅子！
-      .main-content-box
-        .main-title-box
-          .main-content-name masako
-          .main-content-time 2020/1/10(Fry) 10:10:40
-        .main-content-message おはよう！昌！
-    .main-footer
-      .footer-input-box
-        %input{placeholder: "type a message", type: "text", class: "text-box", value: ""}
-        %label{class: "input_box__image"} 
-          %i.far.fa-image
-          %input{type: "file", class: "input_box_image__file"}
-      .footer-send-box
-        %input.login-input-text{type: "submit", class: "submit-btn", value: "Send"}
-
+.main
+  .main-header
+    .main-header-left
+      .main-header-title test
+      .main-header-member Member:Masa
+    .main-header-right 
+      = link_to "#", class: "contents__btn" do
+        Edit
+  .main-content
+    .main-content-box
+      .main-title-box
+        .main-content-name masa
+        .main-content-time 2020/1/10(Fry) 10:10:30
+      .main-content-message おはよう！雅子！
+    .main-content-box
+      .main-title-box
+        .main-content-name masako
+        .main-content-time 2020/1/10(Fry) 10:10:40
+      .main-content-message おはよう！昌！
+  .main-footer
+    .footer-input-box
+      %input{placeholder: "type a message", type: "text", class: "text-box", value: ""}
+      %label{class: "input_box__image"} 
+        %i.far.fa-image
+        %input{type: "file", class: "input_box_image__file"}
+    .footer-send-box
+      %input.login-input-text{type: "submit", class: "submit-btn", value: "Send"}
