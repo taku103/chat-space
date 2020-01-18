@@ -1,20 +1,19 @@
 * {
   box-sizing: border-box;
 }
-.holizontal-list{
-  display: flex;
-}
 .left-side-bar{
   width: 300px;
   height: 100vh;
   background-color: #253141;
+
   .left-side-header{
     width: 300px;
     height: 100px;
     background-color: #253141;
-    margin: 0 20px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
+
     .left-header-center-box{
       background-color: white;
       width: 260px;
@@ -30,27 +29,22 @@
         width: 260px;
         height: 20px;
         line-height: 20px;
-        
       }
       .left-header-right-box{
         width: 60px;
         text-align: right;
         background-color: #253141;
         .contents__btn{
-          // リンクに対して下線を消す作業をする。
           text-decoration: none;
         }
         .fa-margin{
           margin: 0 5px 0 0;
         }
-
         .fa-white{
-          
           color: #ffffff;
         }
       }
     }
-
   }
 
   .left-side-content{
@@ -75,7 +69,10 @@
 }
 
 .main{
-  width: calc(100%);
+  position: absolute;
+  left: 300px;
+  top: 0;
+  width: calc(100% - 300px);
   height: 100vh;
   background-color: #ffffff;
 
@@ -85,12 +82,11 @@
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    padding: 35px 40px 0 40px;
+    padding: 28px 40px 0 40px;
     
     .main-header-left{
-      
-
       .main-header-title{
+        margin-top: 7px;
         margin-bottom: 15px;
         font-size: 20px;
       }
@@ -102,7 +98,21 @@
       }
     }
     .main-header-right{
-
+      color: #38aef0;
+      text-decoration: none;
+      border: solid 1px;
+      width: 72px;
+      height: 40px;
+      margin: 0 40px;
+      
+      .contents__btn{
+        color: #38aef0;
+        text-align: center;
+        font-size: 16px;
+        margin-left: 20px;
+        line-height: 40px;
+        text-decoration: none;
+      }
     }
   }
   .main-content{
@@ -130,9 +140,6 @@
           font-size: 14px;
           color: #434A54;
       }
-
-      
-    
     }
   }
   .main-footer{
@@ -190,11 +197,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
