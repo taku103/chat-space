@@ -12,7 +12,10 @@
   .left-side-content
     - current_user.groups.each do |group|
       .group
-        = link_to "#", class: "contents__btn" do
+        = link_to group_messages_path(group), class: "contents__btn" do
           .left-content-title
             = group.name
-          .left-content-message まだメッセージがありません
+          .left-content-message             
+            = group.show_last_message
+            
+              
